@@ -1,13 +1,15 @@
 services:
   youtubelocal:
+    restart: unless-stopped
     container_name: youtube_local
     build:
-      context: ./src/cloudtube
+      context: ./
       dockerfile: Dockerfile
     ports:
       - 6969:8080
     stdin_open: true
     tty: true
     volumes:
-        - ./youtube-local:/localYT/
-    restart: unless-stopped
+        - ./youtube_local:/localYT/
+        - ./settings.txt:/localYT/settings.txt
+        - ./data:/localYT/data

@@ -1,0 +1,92 @@
+# 0 - Off
+# 1 - On, except video
+# 2 - On, including video (see warnings)
+route_tor = 0
+
+tor_port = 9150
+
+tor_control_port = 9151
+
+port_number = 8080
+
+# This will allow others to connect to your Youtube Local instance as a website.
+# For security reasons, enabling this is not recommended.
+allow_foreign_addresses = True
+
+# Enables requests from foreign addresses to make post requests.
+# For security reasons, enabling this is not recommended.
+allow_foreign_post_requests = True
+
+# 0 - off by default
+# 1 - only manually created subtitles on by default
+# 2 - enable even if automatically generated is all that's available
+subtitles_mode = 0
+
+# ISO 639 language code: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+subtitles_language = 'it'
+
+# Sets a default volume.
+#         Defaults to -1, which means no default value is forced and the browser will set the volume.
+default_volume = -1
+
+# 0 - Related videos disabled
+# 1 - Related videos always shown
+# 2 - Related videos hidden; shown by clicking a button
+related_videos_mode = 1
+
+# 0 - Video comments disabled
+# 1 - Video comments always shown
+# 2 - Video comments hidden; shown by clicking a button
+comments_mode = 1
+
+enable_comment_avatars = True
+
+# 0 to sort by top
+# 1 to sort by newest
+default_comment_sorting = 0
+
+theater_mode = False
+
+default_resolution = 2160
+
+autoplay_videos = True
+
+codec_rank_h264 = 1
+
+codec_rank_vp = 2
+
+codec_rank_av1 = 3
+
+prefer_uni_sources = 1
+
+use_video_hotkeys = True
+
+video_player = 1
+
+proxy_images = True
+
+use_comments_js = True
+
+use_sponsorblock_js = False
+
+theme = 2
+
+font = 0
+
+embed_page_mode = True
+
+autocheck_subscriptions = False
+
+include_shorts_in_subscriptions = False
+
+include_shorts_in_channel = True
+
+# Developer use to debug 403s
+gather_googlevideo_domains = False
+
+# Save all responses from youtube for debugging
+debugging_save_responses = False
+
+# Do not change, remove, or comment out this value, or else your settings may be lost or corrupted
+settings_version = 5
+

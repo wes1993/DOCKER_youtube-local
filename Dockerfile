@@ -2,11 +2,11 @@ FROM python:3.9
 
 WORKDIR /localYT
 
-COPY requirements.txt .
+COPY ./youtube_local/requirements.txt .
 
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
-COPY . .
+COPY ./youtube_local .
 
 # EXPOSE 8080
 
